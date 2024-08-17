@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 300px 600px 800px;
+
+}
+
+#navbar{
+    height: 90px;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 10px 2px 8px #efeded;
+    padding: 30px 60px;
+}
+#navbar button{
+    background-color: white;
+    border: none;
+}
