@@ -10,14 +10,30 @@
 #navbar{
     height: 90px;
     width: 100%;
-    background-color:white;
+    /* background-color:white; */
     display: flex;
     justify-content: space-between;
     box-shadow: 10px 2px 8px #efeded;
     padding: 30px 60px;
 }
 #navbar button{
-    background-color: white;
+    background-color:inherit;
     border: none;
 
+}
+#back
+{
+    margin:60px;
+    background-color:inherit;
+    border: none;
+    box-shadow: 1px 1px 5px #3a3636;
+}
+.arrow
+{
+   height: 2px;
+   size: 4px;
+   margin-left: 10px;
+}
+.spanBack{
+    margin-right: 5px;
 }
