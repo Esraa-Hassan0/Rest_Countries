@@ -29,6 +29,7 @@ body{
 
 #back
 {
+    padding: 8px 16px;
     margin:60px;
     background-color:inherit;
     border: none;
@@ -59,10 +60,11 @@ body{
     overflow: hidden;
     margin-bottom: 60px;
     transition:0.2s;
+    /* visibility: hidden; */
 }
 .country:hover
 {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 .country img
 {
@@ -97,3 +99,57 @@ input:focus{
     outline:none;
 }
 
+
+#flexContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+   /* background-color: aquamarine; */
+   align-items: center;
+}
+#flexContainerCol2{
+    display: grid;
+    margin-left: 100px;
+}
+#subGrid{
+    /* grid-area:right; */
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-right: 70px;
+    flex-basis: 75%;
+}
+#headerSubGrid{
+/* margin-top: 30px; */
+padding: 20px 0px;
+}
+#BorderCountries{
+    margin-top: 20px;
+}
+#imgDiv{
+
+    flex-basis: 25%;   
+
+}
+#subBorderCountries{
+margin-left: 10px;
+box-shadow: 1px 1px 5px #d6d2d2;
+size: 30px;
+padding: 2px 20px;
+}
+
+#filter{
+    padding: 20px 0px 20px 0px;
+    box-sizing: border-box;
+    width: 200px;
+    /* background-position: 10px 10px; */
+    border: none;
+    margin: 50px 0 50px 60px;
+    box-shadow: 10px 2px 8px #efeded;
+    border-radius: 8px;
+    /* position: ; */
+}
+#searchingTools{
+display: grid;
+grid-template-columns: 400px auto 300px;
+
+}

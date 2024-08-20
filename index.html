@@ -17,7 +17,7 @@
     integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
     crossorigin="anonymous"
   />
-    <body data-bs-theme="dark" >
+    <body data-bs-theme="light" >
     <nav id="navbar">
         <h2>Where in the world?</h2>
         <div>
@@ -26,13 +26,27 @@
         </div> 
     </nav>
     <main>
-      
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-
-        <input class="search" type="text" placeholder="&#xF002;   Search for a country" style="font-family:Arial, FontAwesome" />
-        <div class="countries-container">
-            
+       <div id="searchingTools">
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+          <input class="search" type="text" placeholder="&#xF002;   Search for a country" style="font-family:Arial, FontAwesome" data-search/>
+            <div class="place_holder"></div>
+              <input id="filter" list="continent" placeholder="Filter by Region" data-filter />
+              <datalist id="continent">
+                <option value="Africa">
+                <option value="Americas">
+                <option value="Asia">
+                <option value="Europe">
+                <option value="Oceania">
+              </datalist>
         </div>
+        <!-- <div class="country-cards" data-country-cards-container></div> -->
+      <!-- <template data-country-template> -->
+         <div class="countries-container" >
+           <!-- <div class="header" data-header></div>
+           <div class="body" data-body></div> -->
+        </div>
+      <!-- </template> -->
+       
     </main>
    
 
@@ -48,7 +62,7 @@
       crossorigin="anonymous"
     ></script>
 <script src="logic.js"></script>
-
+<script src="subLogic.js"></script>
 </body>
 
 </html>
