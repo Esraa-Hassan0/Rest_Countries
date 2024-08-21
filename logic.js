@@ -61,7 +61,9 @@ fetch("https://restcountries.com/v3.1/all")
 .then((data)=>{ 
     countries=  data.map(country=>{
 // console.log(country)
-card=document.createElement("div");
+card=document.createElement("a");
+card.href=`\cntry1.html?name=${country.name.common}`;
+
 card.classList.add("country")
 card.innerHTML=`  <img src=${country.flags.svg} alt=" flag">
                 <div class="country-text">
