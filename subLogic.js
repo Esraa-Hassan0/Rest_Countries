@@ -72,3 +72,9 @@ fetch(`https://restcountries.com/v3.1/name/${countryname}`)
 
 
 })
+
+function dark()
+{
+    let element = document.body;
+    element.classList.toggle("dark");
+}

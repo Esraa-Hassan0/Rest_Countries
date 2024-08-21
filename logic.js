@@ -82,3 +82,8 @@ return {continent:country.region, element:card,name:country.name.common}
 // card.forEach(card=>card.addEventListener('click',onCardClick));
 // console.log(countries);
 
+function dark()
+{
+    let element = document.body;
+    element.classList.toggle("dark");
+}
