@@ -8,13 +8,13 @@
 
 }
 body{
-    background-color: #f1f5f9;
+    background-color: #f1f5f9 !important;
 }
 
 #navbar{
     height: 90px;
     width: 100%;
-    /* background-color:white; */
+    background-color:white;
     display: flex;
     justify-content: space-between;
     box-shadow: 10px 2px 8px #efeded;
@@ -34,6 +34,7 @@ body{
     background-color:inherit;
     border: none;
     box-shadow: 1px 1px 5px #3a3636;
+    background-color: white;
 }
 .arrow
 {
@@ -61,6 +62,11 @@ body{
     margin-bottom: 60px;
     transition:0.2s;
     /* visibility: hidden; */
+}
+
+  a{
+    text-decoration: none !important;
+    color: black !important;
 }
 .country:hover
 {
@@ -97,44 +103,6 @@ body{
 }
 input:focus{
     outline:none;
-}
-
-
-#flexContainer{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-   /* background-color: aquamarine; */
-   align-items: center;
-}
-#flexContainerCol2{
-    display: grid;
-    margin-left: 100px;
-}
-#subGrid{
-    /* grid-area:right; */
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-right: 70px;
-    flex-basis: 75%;
-}
-#headerSubGrid{
-/* margin-top: 30px; */
-padding: 20px 0px;
-}
-#BorderCountries{
-    margin-top: 20px;
-}
-#imgDiv{
-
-    flex-basis: 25%;   
-
-}
-#subBorderCountries{
-margin-left: 10px;
-box-shadow: 1px 1px 5px #d6d2d2;
-size: 30px;
-padding: 2px 20px;
 }
 
 #filter{

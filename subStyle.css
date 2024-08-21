@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ background-color: #f1f5f9;
+}
+#flexContainer{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+   /* background-color: aquamarine; */
+   /* align-items: center; */
+}
+#flexContainerCol2{
+    display: grid;
+    margin-left: 100px;
+}
+#subGrid{
+    /* grid-area:right; */
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    margin-right: 70px;
+    flex-basis: 75% ;
+}
+#headerSubGrid{
+/* margin-top: 30px; */
+padding: 20px 0px;
+}
+#BorderCountries{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:6px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#imgDiv{
+    width: 500px;  
+    height: 400px;
+    /* overflow: hidden; */
+    margin-left: 80px;
+
+}
+#subBorderCountries{
+
+margin-left: 10px;
+box-shadow: 1px 1px 5px #d6d2d2;
+size: 30px;
+padding: 2px 20px;
+background-color: white;
+}
+#border{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
