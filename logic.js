@@ -1,8 +1,4 @@
 
-document.getElementById('darkmode').addEventListener('click',()=>{
-   document.body.dataset.bsTheme =
-   document.body.dataset.bsTheme=="light"?"dark":"light";
-})
 
 let card
 let countries=[]
