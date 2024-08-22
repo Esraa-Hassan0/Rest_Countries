@@ -121,3 +121,7 @@ display: grid;
 grid-template-columns: 400px auto 300px;
 
 }
+
+.darkMode-container{
+scale: 1.2;
+}
