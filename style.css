@@ -125,3 +125,39 @@ grid-template-columns: 400px auto 300px;
 .darkMode-container{
 scale: 1.2;
 }
+
+.dark{
+    background-color: #1f2937 !important;
+    color: white;
+    #navbar{
+        background-color: #374151;
+        box-shadow:none;
+    }
+    .country{
+        background-color: #374151;
+        
+    }
+    .search{
+        background-color: #374151;
+        box-shadow:none;
+    }
+    #filter{
+        background-color: #374151;
+        box-shadow:none;
+    }
+    .country-text{
+        color: white;
+    }
+    #navbar button{
+        color: white;
+    }
+    #back{
+        background-color:#374151 ;
+        color: white;
+    }
+    #subBorderCountries{
+        background-color:#374151 ;
+        color: white;
+        box-shadow:none;
+    }
+}
