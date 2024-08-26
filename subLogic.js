@@ -22,7 +22,7 @@ const countryname= new URLSearchParams(window.location.search).get('name');
 fetch(`https://restcountries.com/v3.1/name/${countryname}`)
 .then(res=>res.json())
 .then(data=>{
-    console.log(data);
+   // console.log(data);
     let flexContainer=document.querySelector('#flexContainer');
     
   flexContainer.innerHTML=`
@@ -60,7 +60,8 @@ fetch(`https://restcountries.com/v3.1/name/${countryname}`)
    {
        let subBorderCountries=document.createElement('span');
        subBorderCountries.setAttribute('id','subBorderCountries');
-       subBorderCountries.innerHTML=data[0].borders[i];
+       fetch(`https://restcountries.com/v3.1/alpha/${data[0].borders[i]}`)
+       .then((res)=>res.json()).then((data)=>subBorderCountries.innerHTML=data[0].name.common)
        BorderCountries.append(subBorderCountries);
    }}
    else{
