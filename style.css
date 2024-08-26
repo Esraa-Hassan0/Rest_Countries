@@ -161,3 +161,11 @@ scale: 1.2;
         box-shadow:none;
     }
 }
+@media (max-width:750px) {
+    #searchingTools{
+        display: block;
+    }
+    #filter{
+        margin-top: 0;
+    }
+}
