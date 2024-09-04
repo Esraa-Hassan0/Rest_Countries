@@ -1,50 +1,68 @@
-<html lang="en" >
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  href="style.css" rel="stylesheet">
-    
-    <link rel="icon" type="image/x-icon" href="images/countries.png">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/x-icon" href="images/countries.png" />
     <title>Rest Countries</title>
-    
-    <script src="https://kit.fontawesome.com/ab10ff06f4.js" crossorigin="anonymous"></script>
-    <body >
+
+    <script
+      src="https://kit.fontawesome.com/ab10ff06f4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav id="navbarResp">
+      <i class="fa-light fa-bars" style="color: #10293c"></i>
+    </nav>
+
     <nav id="navbar">
-        <h2>Where in the world?</h2>
-        <div class="darkMode-container">
+      <h2>Where in the world?</h2>
+      <div class="darkMode-container">
         <i class="fa-regular fa-moon"></i>
         <button id="darkmode" onclick="dark()"><b>Dark mode</b></button>
-        </div> 
+      </div>
     </nav>
     <main>
-       <div id="searchingTools">
-          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-          <input class="search" type="text" placeholder="&#xF002;   Search for a country" style="font-family:Arial, FontAwesome" data-search/>
-            <div class="place_holder"></div>
-              <input id="filter" list="continent" placeholder="Filter by Region" data-filter />
-              <datalist id="continent">
-                <option value="Africa">
-                <option value="Americas">
-                <option value="Asia">
-                <option value="Europe">
-                <option value="Oceania">
-              </datalist>
-        </div>
-        <!-- <div class="country-cards" data-country-cards-container></div> -->
+      <div id="searchingTools">
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"
+        />
+        <input
+          class="search"
+          type="text"
+          placeholder="&#xF002;   Search for a country"
+          style="font-family: Arial, FontAwesome"
+          data-search
+        />
+        <div class="place_holder"></div>
+        <input
+          id="filter"
+          list="continent"
+          placeholder="Filter by Region"
+          data-filter
+        />
+        <datalist id="continent">
+          <option value="Africa"></option>
+          <option value="Americas"></option>
+          <option value="Asia"></option>
+          <option value="Europe"></option>
+          <option value="Oceania"></option>
+        </datalist>
+      </div>
+      <!-- <div class="country-cards" data-country-cards-container></div> -->
       <!-- <template data-country-template> -->
-         <div class="countries-container" >
-           <!-- <div class="header" data-header></div>
+      <div class="countries-container">
+        <!-- <div class="header" data-header></div>
            <div class="body" data-body></div> -->
-        </div>
+      </div>
       <!-- </template> -->
-       
     </main>
-   
+  </body>
 
-</body>   
+  <script src="logic.js"></script>
 
-<script src="logic.js"></script>
-
-</body>
-
+  <!-- </body> -->
 </html>
