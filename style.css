@@ -99,17 +99,15 @@ input:focus {
   padding: 20px 0px 20px 0px;
   box-sizing: border-box;
   width: 200px;
-  /* background-position: 10px 10px; */
   border: none;
   margin: 50px 0 50px 60px;
   box-shadow: 10px 2px 8px #efeded;
   border-radius: 8px;
-  /* position: ; */
   text-align: center;
 }
 #searchingTools {
   display: grid;
-  grid-template-columns: 16rem 1fr 12rem;
+  grid-template-columns: 16rem 0.75fr 8rem;
 }
 
 .darkMode-container:hover {
