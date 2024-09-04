@@ -19,9 +19,16 @@ document.querySelector("[data-search]").addEventListener("input",i=>{
 document.querySelector("[data-filter]").addEventListener("input",i=>{
     const value=i.target.value.toLowerCase()
     countries.forEach(country=>{
-         const isVisible=(country.continent.toLowerCase()==value)
+        if(value=="all")
+        {
+            const isVisible=true;
+            country.element.toggleAttribute("hidden",!isVisible) 
+
+        }
+        else{
+        const isVisible=(country.continent.toLowerCase()==value)
         country.element.toggleAttribute("hidden",!isVisible) 
-        console.log(isVisible);
+        console.log(isVisible);}
         //  countries-container.element.classList.toggle("c",isVisible)
     })
    

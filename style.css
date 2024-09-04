@@ -169,3 +169,8 @@ scale: 1.2;
         margin-top: 0;
     }
 }
+@media(max-width:600px){
+    .countries-container{
+        justify-content: center;
+    }
+}
