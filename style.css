@@ -176,3 +176,16 @@ input:focus {
     margin-top: -40px;
   }
 }
+@media (max-width:750px) {
+    #searchingTools{
+        display: block;
+    }
+    #filter{
+        margin-top: 0;
+    }
+}
+@media(max-width:600px){
+    .countries-container{
+        justify-content: center;
+    }
+}
