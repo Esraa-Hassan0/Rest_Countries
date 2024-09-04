@@ -173,17 +173,38 @@ input:focus {
   #filter{
     margin-top: -40px;
   }
-}
-@media (max-width:750px) {
-    #searchingTools{
-        display: block;
-    }
-    #filter{
-        margin-top: 0;
-    }
-}
-@media(max-width:600px){
-    .countries-container{
-        justify-content: center;
-    }
+  #NativeName{
+    margin-bottom:10px;
+  
+  } 
+  #Population{
+    margin-bottom:10px;    
+  }
+  #Region{
+    margin-bottom:10px;
+  
+  } 
+  #Capital{
+    margin-bottom:10px;
+  
+  } 
+  #SubRegion{
+    margin-bottom:10px;
+  
+  } 
+  #TopLevelDomain{
+    margin-bottom:10px;
+  
+  } 
+  #Currencies{
+    margin-bottom:10px;
+  
+  } 
+  #languages{
+    margin-bottom:10px;
+  
+  } 
+  #imgDiv{
+    height: 100px;
+  }
 }
