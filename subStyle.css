@@ -14,7 +14,7 @@ body{
    /* align-items: center; */
 }
 #flexContainerCol2{
-    display: grid;
+    /* display: grid; */
     margin-left: 100px;
 }
 #subGrid{
@@ -23,9 +23,11 @@ body{
     grid-template-columns:1fr 1fr;
     margin-right: 70px;
     flex-basis: 75% ;
+    
 }
 #headerSubGrid{
 /* margin-top: 30px; */
+height: fit-content;
 padding: 20px 0px;
 }
 #BorderCountries{
@@ -52,6 +54,7 @@ background-color: white;
 }
 #border{
     margin-left: 10px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 @media(max-width:1100px){
